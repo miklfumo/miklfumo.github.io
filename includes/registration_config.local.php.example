@@ -1,0 +1,20 @@
+﻿<?php
+return [
+    'db' => [
+        'host' => 'fum5852551.mysql',
+        'port' => 3306,
+        'name' => 'fum5852551_applications',
+        'user' => 'fum5852551_mysql',
+        'pass' => 'YOUR_DB_PASSWORD',
+    ],
+    'smtp' => [
+        'host' => 'mail.nic.ru',
+        'port' => 465,
+        'encryption' => 'ssl',
+        'accounts' => [
+            'info' => ['email' => 'info@isedu.ru', 'password' => 'YOUR_INFO_PASSWORD'],
+            'reg' => ['email' => 'reg@isedu.ru', 'password' => 'YOUR_REG_PASSWORD'],
+            'partners' => ['email' => 'partners@isedu.ru', 'password' => 'YOUR_PARTNERS_PASSWORD'],
+        ],
+    ],
+];
