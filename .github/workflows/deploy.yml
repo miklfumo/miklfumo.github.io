@@ -25,16 +25,11 @@ jobs:
           node-version: '20'
           cache: 'pnpm'
 
-      - name: Install pnpm
+      - name: Install dependencies and build
         run: |
-          npm install -g pnpm@8.10.0
-          pnpm --version
-
-      - name: Install dependencies
-        run: pnpm install
-
-      - name: Build
-        run: pnpm run build
+          npx --yes pnpm@8.10.0 --version
+          npx --yes pnpm@8.10.0 install
+          npx --yes pnpm@8.10.0 run build
 
       - name: Copy .nojekyll
         run: cp .nojekyll out/
